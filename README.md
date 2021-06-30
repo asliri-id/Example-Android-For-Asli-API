@@ -1,5 +1,5 @@
 # Example-Android-App-For-Asli-API
-This is app for example coding to implementation Asli API. Change token on string.xml with your token.
+This is app for example coding to implementation Asli API.
  
 Step by step to use this sample project.
 
