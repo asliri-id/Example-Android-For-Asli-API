@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/latar"
+
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        style="@style/CardViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginVertical="0dp"
+        app:cardBackgroundColor="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/rGroup"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rNonOcr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:paddingRight="30dp"
+                        android:text="Input Form"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <RadioButton
+                        android:id="@+id/rOcr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="30dp"
+                        android:text="Using OCR Service"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:visibility="gone"
+                    android:id="@+id/bOcr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/btn_roundedfull_blue"
+                    android:text="Take OCR"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card2"
+        style="@style/CardViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card1"
+        app:cardBackgroundColor="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llGlide"
+                android:layout_alignLeft="@+id/etNik"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:text="NIK"
+                android:textColor="@color/black"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/etNik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvLb"
+                android:layout_centerHorizontal="true"
+                android:background="@android:drawable/editbox_background_normal"
+                android:hint="NIK"
+                android:inputType="number"
+                android:paddingVertical="10dp"
+                android:scrollbars="vertical"
+                android:singleLine="true"
+                android:maxLength="16"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llGlide"
+                android:layout_alignLeft="@+id/etNik"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:text="Name"
+                android:textColor="@color/black"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvLb"
+                android:layout_centerHorizontal="true"
+                android:background="@android:drawable/editbox_background_normal"
+                android:hint="Nama Sesuai KTP"
+                android:inputType="text"
+                android:paddingVertical="10dp"
+                android:scrollbars="vertical"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llGlide"
+                android:layout_alignLeft="@+id/etNik"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:text="POB"
+                android:textColor="@color/black"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/etePob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvLb"
+                android:layout_centerHorizontal="true"
+                android:background="@android:drawable/editbox_background_normal"
+                android:hint="Tempat lahir sesuai KTP"
+                android:inputType="text"
+                android:paddingVertical="10dp"
+                android:scrollbars="vertical"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llGlide"
+                android:layout_alignLeft="@+id/etNik"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:text="DOB"
+                android:textColor="@color/black"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/etBOD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvLb"
+                android:layout_centerHorizontal="true"
+                android:background="@android:drawable/editbox_background_normal"
+                android:hint="Tanggal Lahir"
+                android:inputType="date"
+                android:paddingVertical="10dp"
+                android:scrollbars="vertical"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card3"
+        style="@style/CardViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card2"
+        app:cardBackgroundColor="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:text="Selfie Photo"
+                android:textColor="@color/black"
+                android:textSize="17dp" />
+
+            <Button
+                android:id="@+id/bSelfie"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/btn_roundedfull_blue"
+                android:text="Take Selfie"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/ivSelfie"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+<LinearLayout
+    android:layout_alignParentBottom="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <Button
+        android:id="@+id/bReset"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn_roundedfull_pink"
+        android:text="RESET"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="17dp" />
+    <Button
+        android:id="@+id/bProcess"
+        android:layout_marginRight="10dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn_roundedfull_blue"
+        android:text="PROCESS"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="17dp" />
+
+</LinearLayout>
+
+</RelativeLayout>

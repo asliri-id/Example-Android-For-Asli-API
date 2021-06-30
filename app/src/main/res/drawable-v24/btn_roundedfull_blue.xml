@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:padding="10dp"
+            android:shape="rectangle">
+            <!-- you can use any color you want I used here gray color-->
+            <corners android:radius="100dp" />
+            <solid android:color="@color/purple_200" />
+
+        </shape>
+
+    </item>
+</layer-list>

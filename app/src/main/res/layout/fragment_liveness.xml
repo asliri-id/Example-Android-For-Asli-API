@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <TextureView
+        android:id="@+id/texture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+
+    <com.github.ybq.android.spinkit.SpinKitView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/spin_kit"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        app:SpinKit_Color="@color/purple_200" />
+
+
+    <ImageView
+        android:id="@+id/ivOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="20dp"
+        android:alpha="0.5"
+        android:src="@drawable/overlayliveness" />
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_below="@id/ivOverlay"
+        android:id="@+id/pbPercentage"
+        android:layout_marginVertical="30dp"
+        android:layout_marginHorizontal="80dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/llTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="50dp"
+        android:alpha="0.9"
+        android:background="@color/black"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingVertical="10dp">
+
+        <ImageView
+            android:id="@+id/ivExampleTop"
+            android:scaleX="-1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/satu"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvLltop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="10dp"
+            android:layout_weight="4"
+            android:paddingHorizontal="10dp"
+            android:text="Pastikan wajah tepat ditengah layar, Kemudian ikuti instruksi berikutnya"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginVertical="10dp"
+        android:paddingHorizontal="10dp"
+        android:text="3"
+        android:textColor="@color/white"
+        android:textSize="65dp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/llMidle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="50dp"
+        android:alpha="0.9"
+        android:background="@color/black"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingVertical="10dp"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:scaleX="-1"
+            android:id="@+id/ivExample"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/satu" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="10dp"
+            android:layout_weight="4"
+            android:paddingHorizontal="10dp"
+            android:text="Pastikan wajah tepat ditengah layar, Kemudian ikuti instruksi berikutnya"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bProcess"
+        android:layout_width="wrap_content"
+        android:layout_height="47sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_roundedfull_blue"
+        android:text="NEXT"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+</RelativeLayout>

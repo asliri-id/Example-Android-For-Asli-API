@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_profesional">
+
+    <fragment
+        android:id="@+id/nav_ocr"
+        android:name="com.yusuffirdaus.aslirisalesdemo.ui.ocr.OcrFragment"
+        android:label="@string/menu_ocr"
+        tools:layout="@layout/fragment_ocr" />
+
+    <fragment
+        android:id="@+id/nav_profesional"
+        android:name="com.yusuffirdaus.aslirisalesdemo.ui.profesional.ProfesionalFragment"
+        android:label="@string/menu_profesional"
+        tools:layout="@layout/fragment_profesional" />
+    <fragment
+        android:id="@+id/nav_liveness"
+        android:name="com.yusuffirdaus.aslirisalesdemo.ui.liveness.LivenessFragment"
+        android:label="@string/menu_liveness"
+        tools:layout="@layout/fragment_liveness" />
+
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.yusuffirdaus.aslirisalesdemo.ui.login.LogoutFragment"
+        android:label="Logout"
+        tools:layout="@layout/fragment_liveness" />
+
+    <fragment
+        android:id="@+id/nav_fast"
+        android:name="com.yusuffirdaus.aslirisalesdemo.ui.fast.FastFragment"
+        android:label="Asli Fast"
+        tools:layout="@layout/fragment_fast" />
+
+
+
+</navigation>

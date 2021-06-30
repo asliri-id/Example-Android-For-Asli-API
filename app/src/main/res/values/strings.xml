@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Asliri Sales Demo</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_ocr">OCR</string>
+    <string name="menu_liveness">LIVENESS</string>
+    <string name="menu_fast">Asli Fast</string>
+    <string name="menu_profesional">PROFESSIONAL</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <!--api-->
+
+    <string name="token">change with your own token</string>
+
+    <!--login-->
+
+    <string name="username_empty">Username cannot be empty</string>
+    <string name="password_empty">Password cannot be empty</string>
+    <string name="password_username_empty">Username &amp; Password cannot be empty</string>
+    <string name="title_activity_result">ResultActivity</string>
+
+</resources>
